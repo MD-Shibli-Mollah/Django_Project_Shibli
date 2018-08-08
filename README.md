@@ -15,4 +15,22 @@ The virtual environment will be activated automatically and you’ll see “(myp
 
 workon myproject
 
+Install Django
+Django can be installed easily using pip within your virtual environment.
 
+In the command prompt, ensure your virtual environment is active, and execute the following command:
+
+pip install django
+This will download and install the latest Django release.
+
+After the installation has completed, you can verify your Django installation by executing django-admin --version in the command prompt.
+
+See Get your database running for information on database installation with Django.
+
+Common pitfalls¶
+If django-admin only displays the help text no matter what arguments it is given, there is probably a problem with the file association in Windows. Check if there is more than one environment variable set for running Python scripts in PATH. This usually occurs when there is more than one Python version installed.
+
+If you are connecting to the internet behind a proxy, there might be problem in running the command pip install django. Set the environment variables for proxy configuration in the command prompt as follows:
+
+set http_proxy=http://username:password@proxyserver:proxyport
+set https_proxy=https://username:password@proxyserver:proxyport
